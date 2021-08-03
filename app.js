@@ -5,6 +5,7 @@ const cors = require('cors')
 
 app.use(cors())
 
+
 // use the express-static middleware
 app.use(express.static("public"))
 

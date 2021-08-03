@@ -236,18 +236,18 @@ function setPanaroma(imageSection, imgPath) {
 
 
 function getToken() {
-        surl = "https://www.share.buildworks.in/B5C73E2A"; //window.location.href;
+        surl = "http://www.share.buildworks.in/B5C73E2A"; //window.location.href;
         var id =  surl.substring(surl.lastIndexOf('/') + 1);
         //alert (surl);
         return id;
         
      
     }
-getData({ pagecount: 1, token: getToken() }, "https://api.buildworks.in/v1/web-work-update");
+getData({ pagecount: 1, token: getToken() }, "https://api.buildworks.in/v1/web-work-updates");
 function loadMoreData() {
     console.log(currentPageCount, totalPages);
     if (currentPageCount < totalPages) {
-        getData({ pagecount: currentPageCount + 1, token: getToken() }, "https://api.buildworks.in/v1/web-work-update");
+        getData({ pagecount: currentPageCount + 1, token: getToken() }, "https://api.buildworks.in/v1/web-work-updatess");
         currentPageCount += 1;
         $("#load").hide()
     }  
