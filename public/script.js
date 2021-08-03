@@ -33,7 +33,7 @@ function getData(data, apiUrl) {
 
         error: function (jqXHR, status) {
             console.log(jqXHR);
-            alert("fail" + status.code);
+            alert("fail" + " "+ status.code);
         },
     });
 
