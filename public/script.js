@@ -243,11 +243,11 @@ function getToken() {
         
      
     }
-getData({ pagecount: 1, token: getToken() }, "http://65.0.163.16/v1/web-work-updates");
+getData({ pagecount: 1, token: getToken() }, "https://api.buildworks.in/v1/web-work-update");
 function loadMoreData() {
     console.log(currentPageCount, totalPages);
     if (currentPageCount < totalPages) {
-        getData({ pagecount: currentPageCount + 1, token: getToken() }, "http://65.0.163.16/v1/web-work-updates");
+        getData({ pagecount: currentPageCount + 1, token: getToken() }, "https://api.buildworks.in/v1/web-work-update");
         currentPageCount += 1;
         $("#load").hide()
     }  
