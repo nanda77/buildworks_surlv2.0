@@ -236,7 +236,7 @@ function setPanaroma(imageSection, imgPath) {
 
 
 function getToken() {
-        surl = location.href; //window.location.href;
+        surl = "http://www.share.buildworks.in/B5C73E2A"; //window.location.href;
         var id =  surl.substring(surl.lastIndexOf('/') + 1);
         //alert (surl);
         return id;
