@@ -1,0 +1,317 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container {
+  min-width: 320px;
+  max-width: 600px;
+  height: 100vh;
+  overflow: auto;
+  box-shadow: 0px 1px 8px grey;
+  margin: 0 auto;
+  background: white;
+}
+h3 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+.title {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.slider {
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ccc7c7;
+  box-shadow: 0px 3px 4px lightgrey inset;
+}
+.slides {
+  width: 96%;
+  background: #e6e3e3;
+  border-radius: 20px;
+  margin: 20px auto;
+  border: 2px solid lightgrey;
+}
+.element > div {
+  padding: 0px 15px;
+  box-sizing: border-box;
+  border-bottom: 2px solid lightgrey;
+}
+.element > div:last-child p:first-child {
+  border: none;
+  color: #282f3f; /*#39aa63*/
+}
+.element > div:last-child {
+  border: none;
+}
+.slides div > div {
+  width: 100%;
+  display: table;
+}
+.slides div > div p:first-child {
+  float: left;
+}
+.slides div > div p:last-child {
+  float: right;
+}
+.slick-slide {
+  border-radius: 20px;
+}
+.element > div:first-child {
+  color: #8058d4;
+}
+.element > div:nth-child(2) p:first-child {
+  color: #fd9800;
+}
+.element > div:nth-child(3) p:first-child {
+  color: #cb6565;
+}
+.element > div:nth-child(4) p:first-child {
+  color: #438de7;
+}
+.element > div span {
+  margin-left: 10px;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  color: grey;
+}
+/* section */
+.comments {
+  text-align: center;
+}
+.section {
+  width: 90%;
+  position: relative;
+  left: 10%;
+  top: 20px;
+}
+.section::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  left: -28px;
+  top: 7px;
+  background: inherit;
+  margin-right: 10px;
+}
+.section::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  position: absolute;
+  background: inherit;
+  top: 5px;
+  left: -33px;
+}
+#notes {
+  text-align: left;
+  margin: 0px 0px 10px 6px;
+}
+.card {
+  width: 100%;
+  background: white;
+  display: block;
+  padding-bottom: 40px;
+}
+.cardn {
+  width: 0;
+  background: white;
+  display: block;
+  padding-bottom: 40px;
+}
+.cardHeader {
+  width: 100%;
+  display: table;
+  padding: 0px 0px 0px 6px;
+}
+.cardHeader h1,
+.cardHeader p {
+  float: left;
+  margin: 0;
+}
+.cardHeader h1 {
+  font-size: 20px;
+}
+.cardHeader p {
+  margin: 3px 15px !important;
+}
+.cardHeader img {
+  width: 40px;
+  float: right;
+  margin: -10px 14px 10px 0px;
+}
+.cardHeader p {
+  margin: 13px 17px;
+}
+#issueIcon {
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  right: 6%;
+  top: 40%;
+}
+.imgSection {
+  width: 100%;
+  overflow: scroll;
+  display: block;
+  position: relative;
+  top: 14px;
+}
+.imgSectionNull {
+  width: 0%;
+  overflow: scroll;
+  display: block;
+  position: relative;
+  top: 0px;
+}
+.issueImgs {
+  display: flex;
+  width: max-content;
+}
+.fileImgs {
+  display: flex;
+  width: auto;
+}
+.issueImg {
+  width: 300px; /* 350px */
+  height: 242px;
+  border-radius: 10px;
+  /* background-image: url("https://res.cloudinary.com/nearlet/image/upload/v1608534369/buildn/La91"); */
+  position: relative;
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  margin: 0px 23px 0px 7px;
+}
+.fileImg {
+  width: 100%; /* 350px */
+  height: 53px; /* 38px */
+  border-radius: 10px;
+  /* background-image: url("filebg.png"); */
+  background: rgba(250, 250, 250);
+  position: relative;
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  margin: 0px 20% 0px 7px;
+}
+.issueImg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.thumbnail {
+  position: absolute;
+  height: auto; /* 20% */
+  width: 100%;
+  bottom: 0;
+  background-color: #eef1f2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.thumbnail p {
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  line-height: 53px;
+}
+/* .thumbnail img {
+  float: right;
+  width: 40px;
+} */
+/*  */
+
+/* states */
+.poll {
+  background: #b2b4b4;
+}
+.issue {
+  background: #cf7381;
+}
+.resolve {
+  background: rgb(161, 207, 161);
+}
+.normal {
+  background: #00d2fc;
+}
+/*  */
+.noIssues {
+  height: 260px;
+  display: flex;
+  /* display: table; */
+}
+.noIssuesimg {
+  height: 0px;
+  display: flex;
+  /* display: table; */
+}
+.imgSlides {
+  width: 78%;
+}
+
+.imgSlides .element {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+}
+.imgSlides .element img {
+  width: 100%;
+  height: 100%;
+}
+
+.progressDetails {
+  width: 20%;
+}
+#load {
+  text-align: center;
+  margin: 8px auto;
+  color: white;
+  background: #7f74bb;
+  box-shadow: -1px -1px 18px grey;
+  border: none;
+  position: relative;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+#users,
+#progress {
+  width: 35px;
+  display: block;
+  margin: 10px auto;
+}
+#progress {
+  margin-top: 45px;
+}
+#progressTxt,
+#usersTxt {
+  color: grey;
+}
+#progressTxt {
+  margin: 0px 0px 38px 0px;
+}
