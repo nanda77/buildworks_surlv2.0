@@ -243,11 +243,11 @@ function getToken() {
         
      
     }
-getData({ pagecount: 1, token: getToken() }, "https://65.0.163.16/v1/web-work-updates");
+getData({ pagecount: 1, token: getToken() }, "http://65.0.163.16/v1/web-work-updates");
 function loadMoreData() {
     console.log(currentPageCount, totalPages);
     if (currentPageCount < totalPages) {
-        getData({ pagecount: currentPageCount + 1, token: getToken() }, "https://65.0.163.16/v1/web-work-updates");
+        getData({ pagecount: currentPageCount + 1, token: getToken() }, "http://65.0.163.16/v1/web-work-updates");
         currentPageCount += 1;
         $("#load").hide()
     }  
