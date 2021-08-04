@@ -236,7 +236,7 @@ function setPanaroma(imageSection, imgPath) {
 
 function wurlFunction(wurl)     
 {     
-    wurl = "window.location.href";//window.location.href;
+    wurl = window.location.href; //window.location.href;
     alert(wurl)
     return wurl.replace(/\/$/, "");
 }
