@@ -237,10 +237,10 @@ function setPanaroma(imageSection, imgPath) {
 
 function getToken() {
         surl = window.location.href; //window.location.href; "http://www.share.buildworks.in/B5C73E2A"
-        if(surl == "http://www.share.buildworks.in" ){
+        if(surl == "https://www.share.buildworks.in/" ){
             var id = "B5C73E2A";
         }
-        var id =  surl.substring(surl.lastIndexOf('/') + 1);
+        //var id =  surl.substring(surl.lastIndexOf('/') + 1);
         alert(surl);
         alert (id);
         return id;
