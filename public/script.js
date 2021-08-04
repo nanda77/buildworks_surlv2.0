@@ -236,12 +236,15 @@ function setPanaroma(imageSection, imgPath) {
 
 
 function getToken() {
-        surl = "http://www.share.buildworks.in/B5C73E2A"; //window.location.href;
+        surl = window.location.href; //window.location.href; "http://www.share.buildworks.in/B5C73E2A"
+        if(surl == "http://www.share.buildworks.in" ){
+            var id = "B5C73E2A";
+        }
         var id =  surl.substring(surl.lastIndexOf('/') + 1);
-        //alert (surl);
+        alert(surl);
+        alert (id);
         return id;
-        
-     
+           
     }
 getData({ pagecount: 1, token: getToken() }, "https://api.buildworks.in/v1/web-work-updates");
 function loadMoreData() {
