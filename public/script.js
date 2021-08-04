@@ -241,7 +241,7 @@ function wurlFunction(wurl)
     return wurl.replace(/\/$/, "");
 }
 function getToken() {
-        surl = window.location.href; //window.location.href; "http://www.share.buildworks.in/B5C73E2A"
+        surl = wurlFunction() //window.location.href; "http://www.share.buildworks.in/B5C73E2A"
         if(surl == "https://www.share.buildworks.in" ){
            var id = "B5C73E2A";
            //var id =  surl.substring(surl.lastIndexOf('/') + 1);
