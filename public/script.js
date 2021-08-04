@@ -236,7 +236,7 @@ function setPanaroma(imageSection, imgPath) {
 
 function wurlFunction(wurl)     
 {     
-    wurl = window.location.href; //window.location.href;
+    wurl = "http://www.share.buildworks.in/B5C73E2A/"; //window.location.href;
     alert(wurl)
     return wurl.replace(/\/$/, "");
 }
