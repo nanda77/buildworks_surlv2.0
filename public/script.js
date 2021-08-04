@@ -234,12 +234,17 @@ function setPanaroma(imageSection, imgPath) {
     }, 1000)
 }
 
-
+function wurlFunction(wurl)     
+{     
+    wurl = "window.location.href";//window.location.href;
+    alert(wurl)
+    return wurl.replace(/\/$/, "");
+}
 function getToken() {
         surl = window.location.href; //window.location.href; "http://www.share.buildworks.in/B5C73E2A"
-        if(surl == "https://www.share.buildworks.in/id=B5C73E2A" ){
-           //var id = "B5C73E2A";
-            var id =  surl.substring(surl.lastIndexOf('=') + 1);
+        if(surl == "https://www.share.buildworks.in" ){
+           var id = "B5C73E2A";
+           //var id =  surl.substring(surl.lastIndexOf('/') + 1);
         }
         
         alert(surl);
