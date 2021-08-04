@@ -7,7 +7,7 @@ app.use(cors())
 
 
 // use the express-static middleware
-app.use(express.static("public"))
+app.use(express.static(__dirname + '/public'))//app.use(express.static("public"))
 
 // define the first route
 app.get("/", function (req, res) {
