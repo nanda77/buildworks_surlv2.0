@@ -236,19 +236,15 @@ function setPanaroma(imageSection, imgPath) {
 
 function wurlFunction(wurl)     
 {     
-    wurl = "http://www.share.buildworks.in/B5C73E2A/"; //window.location.href;
-    alert(wurl)
+    wurl = window.location.href; //window.location.href;
+    //alert(wurl)
     return wurl.replace(/\/$/, "");
 }
 function getToken() {
         surl = wurlFunction() //window.location.href; "http://www.share.buildworks.in/B5C73E2A"
-//         if(surl == "https://www.share.buildworks.in" ){
-//            var id = "B5C73E2A";
-//            //var id =  surl.substring(surl.lastIndexOf('/') + 1);
-//         }
-        var id =  surl.substring(surl.lastIndexOf('/') + 1);
-        alert(surl);
-        alert (id);
+        var id =  surl.substring(surl.lastIndexOf('=') + 1);
+        //alert(surl);
+        //alert (id);
         return id;
            
     }
@@ -260,14 +256,5 @@ function loadMoreData() {
         currentPageCount += 1;
         $("#load").hide()
     }  
-    
-// getData({ pagecount: 1, token: "a8762fdb5d7bf561b832a358c22e9994" }, "http://65.0.163.16/v1/web-work-updates");
-// function loadMoreData() {
-//     console.log(currentPageCount, totalPages);
-//     if (currentPageCount < totalPages) {
-//         getData({ pagecount: currentPageCount + 1, token: "a8762fdb5d7bf561b832a358c22e9994" }, "http://65.0.163.16/v1/web-work-updates");
-//         currentPageCount += 1;
-//         $("#load").hide()
-//     }
 
 }
